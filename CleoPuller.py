@@ -173,7 +173,7 @@ def CleoPuller():
             DontDelay = True
             continue
         
-        username = ApiNigerStuff.get('username', 'Unknown Username')
+        username = ApiNigerStuff.get('Chickenwithadrink', 'Unknown Username')
         
         if 'Guest-' in username: # Checks if the username starts with Guest- if it does it doesnt try to pull it
             print(f"{Y}Skipping accs that are impossible to pull (Most likely a guest acc)")
@@ -203,4 +203,5 @@ def CleoPuller():
 # Remove the notes below if you want to add auth to your program
 # Also make sure to set your webhook on line 41
 #auth()
+
 CleoPuller()
